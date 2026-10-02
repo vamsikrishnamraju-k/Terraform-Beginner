@@ -8,7 +8,7 @@ resource "aws_instance" "linux1" {
   ami                    = "ami-0eb38b817b93460ac" #amazon Linux
   instance_type          = "t3.micro"
   key_name               = "terraform"
-  vpc_security_group_ids = ["sg-0445d5fec0ec86639"]
+  vpc_security_group_ids = ["sg-0ccc0b6d549df6714"]
 
   user_data = <<-SCRIPT
                 #!/bin/bash
@@ -30,7 +30,7 @@ resource "aws_instance" "linux2" {
   ami                    = "ami-0eb38b817b93460ac" #amazon Linux
   instance_type          = "t3.micro"
   key_name               = "terraform"
-  vpc_security_group_ids = ["sg-0445d5fec0ec86639"]
+  vpc_security_group_ids = ["sg-0ccc0b6d549df6714"]
 
   user_data = <<-SCRIPT
                 #!/bin/bash
